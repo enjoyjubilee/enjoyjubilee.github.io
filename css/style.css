@@ -1,0 +1,101 @@
+body {
+    padding: 0;
+    overflow: hidden;
+    font-family: helvetica, arial, sans-serif;
+    z-index: 0;
+
+}
+
+#map {
+    position: absolute;
+    right: 0px;
+    left: 350px;
+    height: 100%;
+    top: 56px;
+    z-index: 20;
+}
+
+#navbar {
+  z-index: 100;
+  position:absolute;
+  width: 1280px;
+}
+
+#text {
+  font-size: 1rem;
+  font:sans-serif;
+
+}
+
+#title {
+  font-size: 1.5rem;
+  font:sans-serif;
+  font-weight: bold;
+}
+
+.sidebar {
+    /* word-wrap: break-word; */
+    position: absolute;
+    left: 0px;
+    width: 350px;
+    top: 50px;
+    bottom: 0;
+    overflow-y: auto;
+    padding: 20px;
+    opacity: 50%;
+    background: rgba(240, 136, 144, 0.6);
+    font-size: 10px;
+    z-index: 50;
+}
+
+
+.leaflet-marker-icon {
+    z-index: 100
+}
+
+/*slide0*/
+#nextPage {
+  position:absolute;
+  bottom:100px;
+}
+/*slide1*/
+#zipcodeSearch{
+  position:absolute;
+  bottom:200px;
+}
+/*slide2*/
+/*#centerCity{
+  position:absolute;
+  bottom:310px;
+}
+#northPhiladelphia{
+  position:absolute;
+  bottom:270px;
+}
+#westPhiladelphia{
+  position:absolute;
+  bottom:230px;
+}
+#universityCity{
+  position:absolute;
+  bottom:190px;
+}
+#zoomSearch{
+  position:absolute;
+  bottom:80px;
+}
+/*slide3*/
+#ButtonGroup {
+  position:absolute;
+  bottom:180px;
+}
+/*slide4*/
+/*#universityButtonGroup {
+  position:absolute;
+  bottom:180px;
+}*/
+#homePage {
+  position:absolute;
+  bottom:100px;
+  right:50px;
+}

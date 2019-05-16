@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- CSS Imports -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.css" integrity="sha256-YR4HrDE479EpYZgeTkQfgVJq08+277UXxMLbi/YP69o=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+
+    <!--Top Panel-->
+  <nav id = "navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Entrepreneurship in Pennsylvania</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item ">
+          <a class="nav-link" id = "main" href="#">Main <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id = "search" href="#">Search</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id = "airport" href="#">Airport</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" id = "airport" href="#">Airport</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id = "university" href="#">University</a>
+        </li> -->
+      </ul>
+      <span class="navbar-text" style="font-size: 12px;text-Align = right">
+        Explore the relationship between entrepreneurship, airports and universities
+      </span>
+    </div>
+  </nav>
+
+
+    <!--Left Panel-->
+
+  <div class = "sidebar">
+    <h1 id='title'></h1>
+    <p id="text"></p>
+    <div class = "setPage" id = "slide0">
+              <div id="nextPage" class = "button">
+                <button type="button" class="btn btn-secondary">Next</button>
+              </div>
+            </div>
+    <div class = "setPage" id = "slide1">
+      <div id = "zipcodeSearch" class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+          <div  class="input-group">
+            <input id = "year" type="text" class="form-control" placeholder="Year(2009-2016)" aria-label="Input group example" aria-describedby="btnGroupAddon">
+          </div>
+          <div class="btn-group mr-2" role="group" aria-label="First group">
+              <button id = "search1" type="button" class="btn btn-secondary">Search</button>
+              <button id = "clear1" type="button" class="btn btn-secondary">Clear</button>
+          </div>
+      </div>
+    </div>
+    <div class = "setPage" id = "slide2">
+     <button id="homePage" type="button" class="btn btn-secondary">Home Page</button>
+    </div>
+  </div>
+
+
+
+
+    <!-- Map -->
+    <div id="map"></div>
+
+
+    <!-- Javascript Imports -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.js" integrity="sha256-6BZRSENq3kxI4YYBDqJ23xg0r1GwTHEpvp3okdaIqBw=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore.js" integrity="sha256-O4179En8zabOlPYBNvGp8cF0uh0vnSZpW4Q6Ul1h+8c=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/final.js"></script>
+  </body>
+</html>
